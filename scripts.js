@@ -20,6 +20,9 @@ const todosApp = {
                 alert("Tarefa obrigatória")
             }
         }
+    },
+    created(){
+        this.todos = localStorage.getItem("tarefas") ? JSON.parse(localStorage.getItem("tarefas")) : this.todos
     }
 };
 
