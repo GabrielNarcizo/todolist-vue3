@@ -23,6 +23,10 @@ const todosApp = {
     },
     created(){
         this.todos = localStorage.getItem("tarefas") ? JSON.parse(localStorage.getItem("tarefas")) : this.todos
+    },
+    updated() {
+        localStorage.setItem("tarefas", JSON.stringify(this.todos));
+        
     }
 };
 
