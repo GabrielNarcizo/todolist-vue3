@@ -1,12 +1,7 @@
-var todos = [{
-    text: 'oi',
-    done: true
-}]
-
 const todosApp = {
     data() {
         return {
-            todos: window.todos,
+            todos: [],
             newTodo: {
                 done: false
             }
